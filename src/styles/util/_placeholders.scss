@@ -1,0 +1,9 @@
+%card-image {
+  
+  overflow: hidden;
+  
+
+  &>div {
+    display: block !important;
+  }
+}

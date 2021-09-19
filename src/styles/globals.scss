@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Open+Sans&display=swap');
+@import "@styles/settings/__settings";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  // font-family: -apple-system, "Times New Roman", Times, serif;
+  font-family: $font-body;
+  font-style: $font-italic-style;
+  background-color: #f5f3f6;
+  //   background-image: url("/background.jpg");
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@import "_snipcart.scss"

@@ -1,0 +1,27 @@
+@import "@styles/settings/__settings";
+@import "@styles/util/__util";
+
+.photoWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+}
+
+.photoImage {
+  margin: 0 auto;
+  img {
+    max-height: 60vh;
+    object-fit: contain;
+
+  }
+}
+
+.photoContent {
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+.photoPrice {
+  margin: .4 0 0;
+}
