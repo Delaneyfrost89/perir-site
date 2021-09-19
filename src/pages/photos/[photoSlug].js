@@ -27,10 +27,10 @@ export default function Home({ photo }) {
           <div className={styles.photoContent}>
             <h2>{photo.title}</h2>
             {photo.collections.edges.map(({ node }) => {
-              return <h3>{node.name}</h3>
+              return <h3 key={node.id}>{node.name}</h3>
             })}
             {photo.filmTypes.edges.map(({ node }) => {
-              return <p>{node.name}</p>
+              return <p key={node.id}>{node.name}</p>
             })}
             <p className={styles.photoPrice}>${photo.price.photoPrice}</p>
             <Button

@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <>
       <div className={styles.bgImage}>
-        <Image src='/bgBottom.jpg' width='2000' height='600' />
+        <Image
+          src='/bgBottom.jpg'
+          alt='background image of lilly pads in a pond.'
+          width='2000'
+          height='600'
+        />
       </div>
       <footer className={styles.footer}>
         &copy; P&eacute;rir Photography, {new Date().getFullYear()}

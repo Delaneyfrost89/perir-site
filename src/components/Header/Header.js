@@ -27,7 +27,12 @@ const Header = () => {
         </Container>
       </header>
       <div className={styles.bgImage}>
-        <Image src='/bgImage.jpg' width='2000' height='600' />
+        <Image
+          src='/bgImage.jpg'
+          alt='background image of flowers.'
+          width='2000'
+          height='600'
+        />
       </div>
     </>
   )
