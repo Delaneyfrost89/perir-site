@@ -121,7 +121,7 @@ export async function getStaticProps() {
   const res = await client.query({
     query: gql`
       query AllPhotos {
-        photos {
+        photos(first: 100) {
           edges {
             node {
               id

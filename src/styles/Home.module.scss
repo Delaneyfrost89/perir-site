@@ -94,8 +94,16 @@
     margin: 1rem 0 4rem;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: .5em;
+  }
+}
+
+@media (max-width: 340px) {
+  .photos {
+  grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 2em;
   }
 }
 
@@ -103,8 +111,13 @@
   .photos {
     font-size: .8rem;
   }
+
   .collections {
     font-size: .8rem;
+
+    li {
+      width: 100%;
+    }
   }
 }
 
@@ -116,6 +129,18 @@
   .discover {
     h2 {
       margin-top: 0rem;
+    }
+  }
+
+  .collections {
+    width: 100%;
+
+    li {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
     }
   }
 }

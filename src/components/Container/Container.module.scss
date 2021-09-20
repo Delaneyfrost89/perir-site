@@ -8,3 +8,10 @@
   padding: 0 2em;
 
 }
+
+@media (max-width: 400px){
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
