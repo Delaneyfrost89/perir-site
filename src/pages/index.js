@@ -32,7 +32,7 @@ export default function Home({ photos, collections }) {
     const value = event.currentTarget.value
     setQuery(value)
   }
-  console.log(collections)
+
   return (
     <Container>
       <h1 className='sr-only'>Perir Photography</h1>
@@ -42,12 +42,11 @@ export default function Home({ photos, collections }) {
           <h2>Filter by Collection</h2>
           <ul>
             {collections.map((collection) => {
-              const isActive = collection.id === activeCollection
+              const isActive = collection.slug === activeCollection
               let collectionClassName
               if (isActive) {
                 collectionClassName = styles.collectionIsActive
               }
-              console.log(collection)
               return (
                 <li key={collection.id}>
                   <Button
@@ -69,12 +68,6 @@ export default function Home({ photos, collections }) {
             </li>
           </ul>
         </div>
-        {/* <div className={styles.search}>
-          <h2>Search</h2>
-          <form>
-            <input type='search' onChange={handleOnSearch} />
-          </form>
-        </div> */}
       </div>
 
       <ul className={styles.photos}>

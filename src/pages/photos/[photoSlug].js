@@ -7,7 +7,6 @@ import Button from '@components/Button'
 import styles from '@styles/Product.module.scss'
 
 export default function Home({ photo }) {
-  console.log(photo)
   return (
     <>
       <Head>

@@ -19,5 +19,7 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: -103px;
-  z-index: 1;
+  position: relative;
+  z-index: 0;
 }
+

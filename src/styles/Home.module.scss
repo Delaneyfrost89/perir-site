@@ -59,10 +59,12 @@
   z-index: 10;
   align-items: center;
   justify-content: space-between;
-  margin: 4em 0;
+  margin: 1em 0;
+
   h2 {
     font-size: 1.2em;
-    margin-top: 0;
+    margin-top: 6rem;
+    margin-bottom: 0;
   }
 
 }
@@ -83,16 +85,49 @@
 
 .collectionIsActive {
   background-color: darken($color-accent, 10);
-  
+
 }
 
 .collections {
   ul {
     list-style: none;
-    margin: 4rem 0;
+    margin: 1rem 0 4rem;
     padding: 0;
     display: flex;
     align-items: center;
     gap: .5em;
+  }
+}
+
+@media (max-width: 440px) {
+  .photos {
+    font-size: .8rem;
+  }
+  .collections {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .photos {
+    gap: 4rem;
+  }
+
+  .discover {
+    h2 {
+      margin-top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .photos {
+    gap: 4rem;
+  }
+
+  .discover {
+    h2 {
+      margin-top: 8rem;
+    }
   }
 }

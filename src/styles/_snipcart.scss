@@ -1,12 +1,12 @@
 @import "@styles/settings/__settings";
 
 #snipcart {
-  --bgColor-buttonPrimary: #{$color-hyperbros-green};
-  --bgColor-buttonPrimary-hover: #{lighten($color-hyperbros-green, 10)};
+  --bgColor-buttonPrimary: #{$color-accent};
+  --bgColor-buttonPrimary-hover: #{darken($color-accent, 10)};
   --shadow-buttonPrimary-hover: #{none};
-  --bgColor-buttonPrimary-active: #{darken($color-hyperbros-green, 10)};
-  --bgColor-buttonPrimary-focus: #{lighten($color-hyperbros-green, 10)};
-  --shadow-buttonPrimary-focus: 0 0 10px #{lighten($color-hyperbros-green, 10)};
+  --bgColor-buttonPrimary-active: #{darken($color-accent, 15)};
+  --bgColor-buttonPrimary-focus: #{lighten($color-accent, 10)};
+  --shadow-buttonPrimary-focus: 0 0 10px #{lighten($color-accent, 10)};
   --shadow-default: 0 20px 24px -20px rgba(0,0,0,1),
                     -10px 20px 24px -20px rgba(0,0,0,.4);
 
