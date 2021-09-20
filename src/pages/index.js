@@ -72,6 +72,7 @@ export default function Home({ photos, collections }) {
 
       <ul className={styles.photos}>
         {filteredPhotos.map((photo) => {
+          console.log('>>>' + photo.slug)
           return (
             <li className={styles.photoCard} key={photo.id}>
               <Link href={`/photos/${photo.slug}`}>
@@ -93,13 +94,13 @@ export default function Home({ photos, collections }) {
                 <Button
                   width='full'
                   className='snipcart-add-item'
-                  data-item-id={photo.id}
+                  data-item-id={photo.slug}
                   data-item-price={photo.price.photoPrice}
                   data-item-url='/'
-                  data-item-description={`${photo.title} photography.`}
+                  data-item-description={`${photo.title} photograph print.`}
                   data-item-image={photo.featuredImage.sourceUrl}
                   data-item-name={photo.title}
-                  data-time-max-quantity={1}
+                  data-time-max-quantity={5}
                 >
                   Add to Cart
                 </Button>
