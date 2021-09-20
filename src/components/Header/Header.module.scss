@@ -64,8 +64,10 @@
 
 @media (max-width: 720px) {
   .bgImage {
-    height: 16%;
+    height: 10%;
     top: 0;
+    min-width: 100%;
+    overflow: hidden;
   }
 }
 
